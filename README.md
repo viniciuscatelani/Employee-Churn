@@ -2,7 +2,7 @@
 
 🚨 **What makes an employee leave a company? Can we predict it in advance?**
 
-In this project, I performed a detailed analysis of an employee attrition dataset to identify the main factors associated with voluntary exits and build a predictive model to anticipate such cases.
+In this project, I performed a detailed analysis of an employee attrition dataset to identify the main factors associated with exits and build a predictive model to anticipate such cases.
 
 ---
 
