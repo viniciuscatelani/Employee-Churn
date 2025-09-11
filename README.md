@@ -6,7 +6,7 @@ This project performs a comprehensive analysis of employee attrition in two stag
 
 ---
 
-##  notebooks
+##  📊Notebooks
 
 This project is divided into two main parts, each in its own Jupyter Notebook:
 
