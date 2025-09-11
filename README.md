@@ -11,7 +11,7 @@ This project performs a comprehensive analysis of employee attrition in two stag
 This project is divided into two main parts, each in its own Jupyter Notebook:
 
 * **1. 📊 Predictive Modeling: [employee_attrition.ipynb](https://github.com/viniciuscatelani/Employee-Churn/blob/main/employee_attrition.ipynb)**
-    * This notebook covers the full exploratory data analysis (EDA), feature engineering, and the development of a LightGBM model to predict employee churn.
+    * This notebook covers the full exploratory data analysis (EDA), feature engineering, and the development of a `LightGBM` and `CatBoost` model to predict employee churn.
 
 * **2. 🔎 Causal Inference: [employee_attrition_causal_inference.ipynb](https://github.com/viniciuscatelani/Employee-Churn/blob/main/employee_attrition_causal_inference.ipynb)**
     * This notebook goes a step further to answer "why." It uses the `DoWhy` library and Directed Acyclic Graphs (DAGs) to estimate the causal impact of specific factors like overtime, work-life balance, and business travel on attrition.
@@ -58,12 +58,10 @@ This project highlights the crucial difference between prediction and causation.
 
 #### Predictive Insights (Correlations)
 -   Features like **OverTime**, **JobRole**, and **StockOptionLevel** showed the strongest correlation with attrition and were the most important features in the predictive model.
-
 #### Causal Insights (Causes)
--   **The Overtime Illusion:** While `OverTime` was the top predictor, its direct causal effect on attrition was found to be very small **(~1%)** after controlling for a comprehensive set of confounders. This suggests overtime is more of a symptom of other underlying issues than a primary cause itself.
+-   **The Overtime Illusion:** overtime is not just correlated with attrition but is a powerful, direct causal driver of an employee's decision to leave (+ 67.1%). The magnitude of this effect is the largest we've identified, suggesting that addressing the factors that lead to overtime is one of the most critical and impactful actions the company can take to improve employee retention.
 -   **Direct Causal Drivers:** Low **Environment Satisfaction** (+11%) and **Frequent Business Travel** (+9.9%) were identified as significant, direct causal drivers of an employee's decision to leave.
--   **Complex Factors:** The causal link between **Work-Life Balance** and attrition was found to be statistically insignificant, suggesting a more complex relationship heavily influenced by unobservable factors like employee resilience.
-
+-   **Complex Factors:** The causal link between **Work-Life Balance** and attrition (+15.7%) was found to be as a significant, direct causal driver of employee's attrition.
 ---
 
 ## ⚙️ How to Run
