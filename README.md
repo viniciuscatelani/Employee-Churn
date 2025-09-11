@@ -10,7 +10,7 @@ This project performs a comprehensive analysis of employee attrition in two stag
 
 This project is divided into two main parts, each in its own Jupyter Notebook:
 
-* **1. 📊 [Predictive Modeling: [`[employee_attrition.ipynb](https://github.com/viniciuscatelani/Employee-Churn/blob/main/employee_attrition.ipynb)`](#)**
+* **1. 📊 [Predictive Modeling: [`[employee_attrition.ipynb]`](#)**
     * This notebook covers the full exploratory data analysis (EDA), feature engineering, and the development of a LightGBM model to predict employee churn.
 
 * **2. 🔎 [Causal Inference: [`[employee_attrition_causal_inference.ipynb](https://github.com/viniciuscatelani/Employee-Churn/blob/main/employee_attrition_causal_inference.ipynb)`](#)**
